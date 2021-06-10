@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,5 +16,9 @@ use App\Http\Controllers\LoginController;
 |
 */
 
-Route::get('/dashboard', [AdminController::class, 'index']);
+Route::get('/', [HomeController::class, 'index']);
+
 Route::get('/login', [LoginController::class, 'index']);
+
+Route::get('/dashboard', [AdminController::class, 'index']);
+
