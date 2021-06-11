@@ -52,7 +52,7 @@
             <div class="main-sidebar">
                 <aside id="sidebar-wrapper">
                     <div class="sidebar-brand">
-                        <a href="#">Mahardika Ticket</a>
+                        <a href="{{url('/dashboard')}}">Mahardika Ticket</a>
                     </div>
                     <div class="sidebar-user">
                         {{-- <div class="sidebar-user-picture">
@@ -68,19 +68,16 @@
                     <ul class="sidebar-menu">
                         <li class="menu-header">Dashboard</li>
                         <li class="active">
-                            <a href="#"><i class="ion ion-speedometer"></i><span>Dashboard</span></a>
+                            <a href="{{url('/dashboard')}}"><i class="ion ion-speedometer"></i><span>Dashboard</span></a>
                         </li>
 
                         <li class="menu-header">Menu</li>
                         <li>
-                            <a href="#"><i class="fa fa-book"></i><span>Ticket List</span></a>
+                            <a href="{{url('/ticket')}}"><i class="fa fa-book"></i><span>Ticket List</span></a>
 
                         </li>
                         <li>
-                            <a href="#"><i class="ion ion-android-clipboard "></i><span>Terjual</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="ion ion-ios-person"></i><span>User</span></a>
+                            <a href="{{url('/user')}}"><i class="ion ion-ios-person"></i><span>User</span></a>
                         </li>
 
                 </aside>

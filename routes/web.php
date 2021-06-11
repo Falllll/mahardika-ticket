@@ -17,8 +17,11 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/detail', [HomeController::class, 'detail']);
 
 Route::get('/login', [LoginController::class, 'index']);
 
 Route::get('/dashboard', [AdminController::class, 'index']);
+Route::get('/ticket', [AdminController::class, 'ticket']);
+Route::get('/user', [AdminController::class, 'user']);
 

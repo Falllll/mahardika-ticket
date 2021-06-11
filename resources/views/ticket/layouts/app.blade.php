@@ -13,18 +13,53 @@
     
     <title>@yield('title')</title>
     <style type="text/css">
-      body { background: rgb(204, 204, 204) !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+      body { background: rgb(204, 204, 204) !important; }
 
       .bg-footer{
         background: white !important;
       }
+      .bg-img{
+        background-image: url('img/asset/head1.png');
+    }
+
+    .head{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        color: black;
+        text-shadow: 5px 5px 10px #111;
+    }
+    .best-seller{
+        margin: auto;
+        padding: auto;
+    }
+
+    .title{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        color: #0fd3ff;
+        
+    }
+    .jadwal{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .orange{
+        color: #f26f1d;
+    }
+    .diskon{
+        font-size: 15px;
+    }
+    .desc{
+      text-align: justify;
+    }
    </style>
+
   </head>
   <body>
     {{-- Header --}}
    <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
+          <img src="{{asset('img/asset/logo.png')}}" width="50" alt="logo">
           <h4>Mahardika Ticket</h4>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
@@ -50,9 +85,8 @@
       <div class="container">
         <div class="row pt-5 pb-5">
           <div class="col-lg-6 col-sm-12">
-            <div class="container d-inline">
-              <h4 class="text-start">Mahardika Ticket</h4>
-            </div>
+              <img src="{{asset('img/asset/logo.png')}}" class="float-start" width="50" alt="logo">
+              <h4>Mahardika Ticket</h4>
           </div>
           <div class="col-lg-6 col-sm-12">
             <div class="text-end">

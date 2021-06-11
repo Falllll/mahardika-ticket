@@ -10,4 +10,14 @@ class AdminController extends Controller
     {
         return view ('admin.index');
     }
+
+    public function ticket ()
+    {
+        return view ('admin.ticket');
+    }
+
+    public function user ()
+    {
+        return view ('admin.user');
+    }
 }

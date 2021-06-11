@@ -10,4 +10,9 @@ class HomeController extends Controller
     {
         return view ('ticket.index');
     }
+
+    public function detail()
+    {
+        return view ('ticket.detail');
+    }
 }
