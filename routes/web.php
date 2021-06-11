@@ -27,6 +27,14 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('/dashboard', [AdminController::class, 'index']);
     Route::get('/ticket', [AdminController::class, 'ticket']);
     Route::get('/user', [AdminController::class, 'user']);
+    Route::get('/create', [AdminController::class, 'create']);
+    Route::post('/store', [AdminController::class, 'store'])->name('store');
+    Route::get('/edit/{id}', [AdminController::class, 'edit']);
+    Route::put('/ticket/{id}', [AdminController::class, 'update']);
+    Route::delete('/ticket/{id}', [AdminController::class, 'destroy']);
+    Route::delete('/user/{id}', [AdminController::class, 'delete']);
+    
+    
 });
 
 

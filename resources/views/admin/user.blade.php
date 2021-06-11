@@ -24,15 +24,15 @@
                                         <th>Nama</th>
                                         <th>Aksi</th>
                                     </tr>
-                                    {{-- @foreach ($users as $user) --}}
+                                    @foreach ($users as $user)
                                     <tr>
 
-                                        <td style="vertical-align: middle;">#</td>
-                                        <td style="vertical-align: middle;">#</td>
-                                        <td style="vertical-align: middle;">#</td>
+                                        <td style="vertical-align: middle;">{{$i++}}</td>
+                                        <td style="vertical-align: middle;">{{$user->email}}</td>
+                                        <td style="vertical-align: middle;">{{$user->name}}</td>
 
                                         <td style="width: 120px;text-align: center;vertical-align: middle; ">
-                                            <form action="#" method="post">
+                                            <form action="/user/{{$user->id}}" method="post">
                                                 @method('DELETE')
                                                 @csrf
                                                 <button type="submit" class="btn btn-sm btn-primary btn-circle" onclick="return confirm('anda yakin ingin menghapus data?');"><span class="far fa-trash-alt"></span></button>
@@ -41,7 +41,7 @@
 
                                         </td>
                                     </tr>
-                                    {{-- @endforeach --}}
+                                    @endforeach
 
 
                                 </table>
