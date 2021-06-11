@@ -25,7 +25,8 @@
     <div class="card-body login-card-body">
       <p class="login-box-msg">Silahkan login dengan akun anda</p>
 
-      <form action="#" method="post">
+      <form action="{{route('login')}}" method="post">
+        {{ csrf_field() }}
         <div class="input-group mb-3">
           <input type="email" class="form-control" name="email" placeholder="Email">
           <div class="input-group-append">

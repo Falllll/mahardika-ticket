@@ -22,13 +22,11 @@
                                         <th>No</th>
                                         <th>Email</th>
                                         <th>Nama</th>
-                                        <th>Level</th>
                                         <th>Aksi</th>
                                     </tr>
                                     {{-- @foreach ($users as $user) --}}
                                     <tr>
 
-                                        <td style="vertical-align: middle;">#</td>
                                         <td style="vertical-align: middle;">#</td>
                                         <td style="vertical-align: middle;">#</td>
                                         <td style="vertical-align: middle;">#</td>

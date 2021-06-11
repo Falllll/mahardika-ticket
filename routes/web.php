@@ -20,8 +20,13 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/detail', [HomeController::class, 'detail']);
 
 Route::get('/login', [LoginController::class, 'index']);
+Route::post('/login', [LoginController::class, 'login'])->name('login');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
-Route::get('/dashboard', [AdminController::class, 'index']);
-Route::get('/ticket', [AdminController::class, 'ticket']);
-Route::get('/user', [AdminController::class, 'user']);
+Route::group(['middleware' => ['auth']], function(){
+    Route::get('/dashboard', [AdminController::class, 'index']);
+    Route::get('/ticket', [AdminController::class, 'ticket']);
+    Route::get('/user', [AdminController::class, 'user']);
+});
+
 

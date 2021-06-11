@@ -24,11 +24,13 @@
                                     <tr>
                                         <th>No</th>
                                         <th>Gambar</th>
-                                        <th>Name</th>
-                                        <!-- <th>Time</th> -->
-                                        <th>Deskripsi</th>
+                                        <th>Nama</th>
+                                        <th>Hari</th>
+                                        <th>tanggal</th>
+                                        <th>Jam Mulai</th>
+                                        <th>Jam Selesai</th>
                                         <th>Harga</th>
-
+                                        <th>Desc</th>
                                         <th>Aksi</th>
                                     </tr>
                                     {{-- @foreach ($menus as $menu) --}}
@@ -36,13 +38,15 @@
 
                                         <td style="vertical-align: middle;">#</td>
                                         <td style="vertical-align: middle;">
-                                            <img src="#" width="120" alt="Foto makanan">
+                                            <img src="#" width="120" alt="Ticket">
                                         </td>
                                         <td style="vertical-align: middle;">#</td>
-                                        <td style="width: 350px;vertical-align: middle;">#</td>
                                         <td style="vertical-align: middle;">#</td>
-
-
+                                        <td style="vertical-align: middle;">#</td>
+                                        <td style="vertical-align: middle;">#</td>
+                                        <td style="vertical-align: middle;">#</td>
+                                        <td style="vertical-align: middle;">#</td>
+                                        <td style="vertical-align: middle;">#</td>
                                         <td style="width: 120px;text-align: center;vertical-align: middle; ">
 
                                             <a href="#/edit" class="btn btn-sm btn-primary btn-circle " style="float:left"><i class="far fa-edit"></i></a>
