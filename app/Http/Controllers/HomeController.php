@@ -3,16 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Ticket;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        return view ('ticket.index');
+        $tickets = Ticket::all();
+        $randoms = Ticket::all()->random(3);
+
+        return view ('ticket.index', compact('randoms', 'tickets'));
     }
 
-    public function detail()
+    public function detail($id)
     {
-        return view ('ticket.detail');
+        $ticket = Ticket::where('id', $id)->first();
+        return view ('ticket.detail', compact('ticket'));
     }
 }
