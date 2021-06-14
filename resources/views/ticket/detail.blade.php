@@ -19,8 +19,8 @@
                     <p class="orange"><strong>{{$ticket->jam_mulai}} - {{$ticket->jam_selesai}}</strong></p>
                 </div>
                 <div class="col-lg-6">
-                    <p class="text-decoration-line-through orange text-end diskon"><strong>{{$ticket->harga}}</strong></p>
-                    <h3 class="text-end text-right"><strong>Rp.20.000,-</strong></h3>
+                    <p class="text-decoration-line-through orange text-end diskon"><strong>Rp. {{number_format($ticket->harga)}}</strong></p>
+                    <h3 class="text-end text-right"><strong>Rp. {{number_format($ticket->diskon)}}</strong></h3>
                 </div>
             </div>
             <p class="card-text desc"><strong>{{$ticket->desc}}</strong></p>

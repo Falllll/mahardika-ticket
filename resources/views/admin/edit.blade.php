@@ -55,6 +55,10 @@
                                     <input type="number" name="harga" id="harga" class="form-control" placeholder="Masukkan Harga" required value="{{$ticket->harga}}">
                                 </div>
                                 <div class="form-group">
+                                    <label for="diskon"><strong>Harga Diskon</strong></label>
+                                    <input type="number" name="diskon" id="diskon" class="form-control" placeholder="Masukkan diskon" required value="{{$ticket->diskon}}">
+                                </div>
+                                <div class="form-group">
                                     <label for="stok"><strong>Stok</strong></label>
                                     <input type="number" name="stok" id="stok" class="form-control" placeholder="Masukkan Stok" required value="{{$ticket->stok}}">
                                 </div>

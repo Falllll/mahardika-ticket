@@ -43,8 +43,8 @@
                 <p class="orange"><strong>{{$ticket->jam_mulai}} - {{$ticket->jam_selesai}}</strong></p>
             </div>
             <div class="col-lg-3">
-                <p class="text-decoration-line-through orange text-end diskon"><strong>{{number_format($ticket->harga)}}</strong></p>
-                <h3 class="text-end"><strong>{{number_format($ticket->harga)}}</strong></h3>
+                <p class="text-decoration-line-through orange text-end diskon"><strong>Rp. {{number_format($ticket->harga)}}</strong></p>
+                <h3 class="text-end"><strong>Rp. {{number_format($ticket->diskon)}}</strong></h3>
             </div>
         </div>
     </div>

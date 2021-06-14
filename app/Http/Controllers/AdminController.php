@@ -10,7 +10,9 @@ class AdminController extends Controller
 {
     public function index ()
     {
-        return view ('admin.index');
+        $ticket = Ticket::all()->count();
+        $user = User::all()->count();
+        return view ('admin.index', compact('ticket', 'user'));
     }
 
     public function ticket ()
@@ -48,6 +50,7 @@ class AdminController extends Controller
         $ticket->jam_mulai = $request->jam_mulai;
         $ticket->jam_selesai = $request->jam_selesai;
         $ticket->harga = $request->harga;
+        $ticket->diskon = $request->diskon;
         $ticket->stok = $request->stok;
         $ticket->desc = $request->desc;
         $ticket->gambar = $namafile;
@@ -81,6 +84,7 @@ class AdminController extends Controller
             'jam_mulai' => $request['jam_mulai'],
             'jam_selesai' => $request['jam_selesai'],
             'harga' => $request['harga'],
+            'diskon' => $request['diskon'],
             'stok' => $request['stok'],
             'desc' => $request['desc'],
             'gambar' => $awal,

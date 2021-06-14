@@ -21,7 +21,7 @@
               <h4>Ticket List</h4>
             </div>
             <div class="card-body">
-              1
+              {{$ticket}}
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@
               <h4>Pengguna</h4>
             </div>
             <div class="card-body">
-              2
+              {{$user}}
             </div>
           </div>
         </div>

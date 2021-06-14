@@ -22,6 +22,7 @@ class CreateTicketsTable extends Migration
             $table->time('jam_mulai');
             $table->time('jam_selesai');
             $table->bigInteger('harga');
+            $table->bigInteger('diskon');
             $table->integer('stok');
             $table->longText('desc');
             $table->timestamps();

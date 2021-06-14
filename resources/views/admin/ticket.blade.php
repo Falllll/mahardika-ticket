@@ -29,6 +29,7 @@
                                         <th>tanggal</th>
                                         <th>Jam</th>
                                         <th>Harga</th>
+                                        <th>Diskon</th>
                                         <th>Stok</th>
                                         <th>Desc</th>
                                         <th>Aksi</th>
@@ -45,6 +46,7 @@
                                         <td style="vertical-align: middle;">{{$ticket->tanggal}}</td>
                                         <td style="vertical-align: middle;">{{$ticket->jam_mulai}} - {{$ticket->jam_selesai}}</td>
                                         <td style="vertical-align: middle;">{{$ticket->harga}}</td>
+                                        <td style="vertical-align: middle;">{{$ticket->diskon}}</td>
                                         <td style="vertical-align: middle;">{{$ticket->stok}}</td>
                                         <td style="vertical-align: middle;">{{$ticket->desc}}</td>
                                         <td style="width: 120px;text-align: center;vertical-align: middle; ">
